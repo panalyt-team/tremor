@@ -325,6 +325,12 @@ export const AxisLabels: Story = {
   },
 };
 
+export const xAxisNoPadding: Story = {
+  args: {
+    xAxisPadding: 0,
+  },
+};
+
 export const DataLabelsSimple: Story = {
   args: {
     renderLabel: true,
@@ -349,7 +355,7 @@ export const DataLabelsFunction: Story = {
   args: {
     renderLabel: renderCustomizedLabel,
   },
-}
+};
 
 export const ShowAxisLine: Story = {
   args: {
