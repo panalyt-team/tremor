@@ -1,7 +1,7 @@
 {
-  "name": "@tremor/react",
+  "name": "@abalonperin/tremor",
   "version": "0.0.0-development",
-  "description": "The React library to build dashboards faster.",
+  "description": "A fork of the Tremor library",
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "rollup -c",
@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tremorlabs/tremor.git"
+    "url": "git+https://github.com/tremorlabs/tremor.git"
   },
   "author": "tremor",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/tremorlabs/tremor/issues"
   },

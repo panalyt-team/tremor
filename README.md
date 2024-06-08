@@ -1,5 +1,7 @@
 <br />
 <br />
+<h2>WARNING: This is a fork of the Tremor library that can be found at: https://github.com/tremorlabs/tremor</h2>
+<p>This fork is intended to be used at Panalyt until the pending PRs that resolves some of the necessary items for Panalyt are merged</p>
 <p align="center">
   <a href="https://tremor.so">
     <picture>
