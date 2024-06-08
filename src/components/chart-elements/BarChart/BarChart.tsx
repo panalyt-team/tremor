@@ -93,6 +93,7 @@ const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>((props, ref) =>
     onValueChange,
     enableLegendSlider = false,
     customTooltip,
+    renderLabel,
     rotateLabelX,
     barCategoryGap,
     tickGap = 5,
@@ -420,6 +421,7 @@ const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>((props, ref) =>
                 animationDuration={animationDuration}
                 shape={(props: any) => renderShape(props, activeBar, activeLegend, layout)}
                 onClick={onBarClick}
+                label={renderLabel}
               />
             ))}
           </ReChartsBarChart>

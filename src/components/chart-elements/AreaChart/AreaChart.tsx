@@ -78,6 +78,7 @@ const AreaChart = React.forwardRef<HTMLDivElement, AreaChartProps>((props, ref) 
     onValueChange,
     enableLegendSlider = false,
     customTooltip,
+    renderLabel,
     rotateLabelX,
     tickGap = 5,
     xAxisLabel,
@@ -441,6 +442,7 @@ const AreaChart = React.forwardRef<HTMLDivElement, AreaChartProps>((props, ref) 
                 animationDuration={animationDuration}
                 stackId={stack ? "a" : undefined}
                 connectNulls={connectNulls}
+                label={renderLabel}
               />
             ))}
             {onValueChange
