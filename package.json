@@ -1,6 +1,6 @@
 {
   "name": "@abalonperin/tremor",
-  "version": "0.0.4-development",
+  "version": "0.0.5-development",
   "description": "A fork of the Tremor library",
   "scripts": {
     "prebuild": "rm -rf dist",
