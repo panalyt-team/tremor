@@ -119,7 +119,7 @@
   },
   "release": {
     "branches": [
-      "main",
+      "panalyt",
       {
         "name": "beta",
         "prerelease": true
