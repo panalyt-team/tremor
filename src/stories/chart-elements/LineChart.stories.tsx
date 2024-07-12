@@ -12,6 +12,8 @@ import {
   longBaseChartData,
   longIndexBaseChartData,
   simpleBaseChartWithNegativeValues,
+  multipleXAxisChartData,
+  multiSeriesMultiCategoriesChartData,
 } from "./helpers/testData";
 import { valueFormatter } from "./helpers/utils";
 
@@ -131,7 +133,10 @@ export const SingleAndMultipleDataAndOnValueChange: Story = {
 };
 
 export const LegendSlider: Story = {
-  args: { enableLegendSlider: true },
+  args: {
+    categories: ["Sales", "Successful Payments", "Test"],
+    enableLegendSlider: true,
+  },
 };
 export const PreserveStartEnd: Story = {
   args: { intervalType: "preserveStartEnd" },
@@ -366,5 +371,56 @@ export const DataLabelsFunction: Story = {
 export const ShowAxisLine: Story = {
   args: {
     showAxisLine: true,
+  }
+};
+
+export const RightOrientation: Story = {
+  args: {
+    categories: ["Sales"],
+    yAxisConfigs: [{ orientation: "right" }],
+  },
+};
+
+export const MultipleYAxes: Story = {
+  args: {
+    yAxisConfigs: [
+      {
+        orientation: "left",
+        categories: ["Successful Payments"],
+        valueFormatter: (value: number) => `${value} S`,
+      },
+      {
+        orientation: "right",
+        categories: ["Sales"],
+        valueFormatter: (value: number) => `${value} P`,
+      },
+    ],
+  },
+};
+
+export const TopOrientation: Story = {
+  args: {
+    categories: ["Sales"],
+    xAxisConfigs: [{ orientation: "top" }],
+  },
+};
+
+export const MultipleXAxes: Story = {
+  args: {
+    categories: ["Sales"],
+    data: multipleXAxisChartData,
+    xAxisConfigs: [{ orientation: "bottom" }, { orientation: "top" }],
+  },
+};
+
+export const MultipleXAndYAxesMultipleCategories: Story = {
+  args: {
+    categories: ["Sales", "Cost"],
+    data: multiSeriesMultiCategoriesChartData,
+    yAxisConfigs: [
+      { orientation: "left", valueFormatter: (value: number) => `${value} S` },
+      { orientation: "right", valueFormatter: (value: number) => `${value} P` },
+    ],
+    xAxisConfigs: [{ orientation: "bottom" }, { orientation: "top" }],
   },
 };
