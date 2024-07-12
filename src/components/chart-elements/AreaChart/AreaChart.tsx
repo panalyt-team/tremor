@@ -203,7 +203,7 @@ const AreaChart = React.forwardRef<HTMLDivElement, AreaChartProps>((props, ref) 
                 label: xAxisLabel,
                 orientation: xAxisConfig.orientation,
                 xAxisId: idx,
-                padding: { left: paddingValue, right: paddingValue },
+                padding: paddingValue,
                 intervalType,
                 startEndOnly,
                 minTickGap: tickGap,

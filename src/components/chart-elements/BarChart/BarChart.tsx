@@ -186,7 +186,7 @@ const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>((props, ref) =>
                 orientation: xAxisConfig.orientation,
                 xAxisId: idx,
                 layout,
-                padding: { left: paddingValue, right: paddingValue },
+                padding: paddingValue,
                 xAxisCount: xAxisConfigs.length,
                 showAxisLine,
               };

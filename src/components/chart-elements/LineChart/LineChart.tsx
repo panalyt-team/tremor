@@ -189,7 +189,7 @@ const LineChart = React.forwardRef<HTMLDivElement, LineChartProps>((props, ref) 
                 .flatMap((d) => d.data);
               return renderHorizontalXAxis({
                 key: `x-axis-${idx}`,
-                padding: { left: paddingValue, right: paddingValue },
+                padding: paddingValue,
                 showAxis: showXAxis,
                 dataKey: index,
                 startEndOnly,
