@@ -471,6 +471,5 @@ export const MultipleXAndYAxes: Story = {
       { orientation: "right", valueFormatter: (value: number) => `${value} P` },
     ],
     xAxisConfigs: [{ orientation: "bottom" }, { orientation: "top" }],
->>>>>>> feat/multiple_yaxis_and_xaxis
   },
 };
