@@ -430,6 +430,13 @@ export const MultipleYAxes: Story = {
   },
 };
 
+export const SingleYAxisWithValueFormatter: Story = {
+  args: {
+    categories: ["Sales", "Successful Payments"],
+    yAxisConfigs: [{ orientation: "left", valueFormatter: (value: number) => `${value} S` }],
+  },
+};
+
 export const MultipleYAxesWithExplicitCategories: Story = {
   args: {
     yAxisConfigs: [
